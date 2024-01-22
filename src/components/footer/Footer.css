@@ -1,0 +1,33 @@
+footer{
+    padding: 40px 40px 0;
+    background-color: #fff;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo img{
+    width: 150px;
+    height: 100px;
+}
+ul li{
+    list-style: none;
+    padding: 10px 0 0;
+}
+.footer-list{
+    font-style: italic;
+}
+.footer-list h3{
+    font-weight: 500;
+}
+.footer-links{
+    display: flex;
+}
+.icon{
+    margin-right: 10px;
+}
+.bottom{
+    border-top: 1px solid #13296b;
+    text-align: center;
+    padding: 20px 0;
+}
