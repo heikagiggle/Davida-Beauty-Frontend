@@ -1,5 +1,6 @@
 import { useContext, useState } from "react";
 import "./SingleProduct.css";
+import config from '../../config.json'
 import QuantityInput from "./QuantityInput";
 import { useParams } from "react-router-dom";
 import useData from "../../hooks/useData";
@@ -27,7 +28,7 @@ const SingleProduct = () => {
               {product.images.map((image, index) => (
                 <img
                   key={index}
-                  src={`http://localhost:5000/products/${image}`}
+                  src={`${config.backendURL}/products/${image}`}
                   alt={product.title}
                   className={selectedImage === index ? "selected_image" : ""}
                   onClick={() => setSelectedImage(index)}
