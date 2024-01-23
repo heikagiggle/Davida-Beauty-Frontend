@@ -3,13 +3,13 @@ import "./LinkWithIcon.css";
 import { NavLink } from "react-router-dom";
 
 //create reusable components, title, link, emoji
-const LinkWithIcon = ({ title, link, emoji, sidebar }) => {
+const LinkWithIcon = ({ title, link,  sidebar }) => {
   return (
     <NavLink
       to={link}
       className={sidebar ? "align_center sidebar_link" : "align_center"}
     >
-      {title} <img src={emoji} alt="rocket" className="link_emoji" />
+      {title} 
     </NavLink>
   );
 };

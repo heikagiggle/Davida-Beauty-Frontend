@@ -2,6 +2,8 @@ import hero from "../../assets/hero.png";
 import two from "../../assets/hero-two.png";
 import HeroSection from "./HeroSection";
 import FeaturedProducts from "./FeaturedProducts";
+import Footer from "./Footer";
+import Contact from "./Contact";
 
 const HomePage = () => {
   return (
@@ -17,10 +19,14 @@ const HomePage = () => {
 
       <HeroSection
         title="Want to Learn A Skill?"
-        subtitle="Are you stylist savvy? Do you want to be one of the best and most sort after hairstylist in the world? Come be a professional within 3 months"
+        subtitle="Are you style savvy? Do you want to be one of the best and most sort after hairstylist in the world? Come be a professional within 3 months"
         link="/"
         image={two}
       />
+
+      <Contact />
+
+      <Footer />
     </div>
   );
 };

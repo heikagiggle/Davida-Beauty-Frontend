@@ -1,0 +1,52 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 40px 0;
+  background-color: #fff;
+}
+.contact-left {
+  display: flex;
+  padding-top: 40px;
+}
+
+.contact-right img {
+  width: 400px;
+}
+.address {
+  width: 200px;
+}
+.contact P {
+  padding: 5px 0 10px;
+}
+.right {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.contact-map {
+  text-decoration: underline;
+  font-weight: 100;
+}
+@media screen and (max-width: 768px) {
+  .contact {
+    padding-top: 20rem;
+    flex-direction: column;
+    /* width: 100%; */
+  }
+  .contact h3 {
+    /* flex-direction: column; */
+    text-align: center;
+  }
+  .contact-right img {
+    /* display: flex; */
+    /* padding-right: 200px; */
+    width: 400px;
+  }
+  .right {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 20px;
+  }
+  .address {
+    width: 0px;
+  }
+}

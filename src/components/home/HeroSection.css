@@ -1,53 +1,83 @@
 .hero_section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 550px;
-    padding: 0 60px;
-    background-color: #13296b;
-    color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 550px;
+  padding: 0 60px;
+  background-color: #13296b;
+  color: #fff;
 }
 
 .hero_section > div {
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .hero_title {
-    font-size: 45px;
-    font-weight: 700;
-    margin-bottom: 15px;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .hero_subtitle {
-    font-size: 24px;
-    margin-bottom: 32px;
-    width: 70%;
+  font-size: 24px;
+  margin-bottom: 32px;
+  width: 70%;
 }
 
 .hero_link {
-    padding: 16px 32px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-weight: 700;
-    border: 2px solid #fff;
-    border-radius: 32px;
-    background-color: #fff;
-    color: #000;
-    transition: all 0.3s ease-in-out;
+  padding: 16px 32px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  border: 2px solid #fff;
+  border-radius: 32px;
+  background-color: #fff;
+  color: #000;
+  transition: all 0.3s ease-in-out;
 }
 
 .hero_link:hover {
-    background-color: transparent;
-    color: #fff;
+  background-color: transparent;
+  color: #fff;
 }
 
 .hero_image {
-    height: 500px;
-    transition: all 0.3s ease-in-out;
-    border-radius: 100px;
+  height: 500px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 100px;
 }
 
 .hero_image:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+  .hero_section {
+    grid-template-columns: 1fr; /* Change to a single column layout */
+    padding: 0 0; /* Adjust padding for smaller screens */
+    text-align: center; /* Center align text */
+    height: 450px;
+  }
+  .hero_section > div {
+    padding-top: 5rem;
+  }
+  .hero_image {
+    height: 350px;
+  }
+  .hero_title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .hero_subtitle {
+    font-size: 18px;
+    margin-bottom: 32px;
+    width: 70%;
+  }
+  .hero_link {
+    padding: 12px 32px;
+   
+  }
 }

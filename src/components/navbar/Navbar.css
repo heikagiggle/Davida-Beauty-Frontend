@@ -12,6 +12,10 @@
     height: 100px;
     padding-top: 1rem;
 }
+form{
+    display: flex;
+    align-items: center;
+}
 .navbar_form{
     width: 450px;
     height: 40px;
@@ -56,6 +60,7 @@
     font-size: 15px;
     margin-left: 5px;
 }
+
 @media (min-width:1024px) {
     .navbar_links {
         font-size: 15px;
@@ -64,3 +69,29 @@
         margin: 10px;
     }
 }
+@media screen and (max-width: 760px) {
+   .navbar_links > a{
+    display: none;
+   }
+   .navbar{
+    padding: 0 20px;
+}
+   .navbar_form{
+    width: 250px;
+    height: 40px;
+    border: 1px solid #cdcdcd;
+    padding: 3px;
+}
+.search_button {
+    height: 100%;
+    padding: 0 3px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    background-color: #4169E1;
+    color: #fff;
+    cursor: pointer;
+}
+  }
+  

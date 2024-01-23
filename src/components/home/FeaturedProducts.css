@@ -9,6 +9,19 @@
 }
 
 .featured_products_list {
+    display: flex;
     justify-content: space-evenly;
     margin-bottom: 65px;
+}
+@media screen and (max-width: 768px) {
+    .featured_products{
+        padding-top: 20rem;
+    }
+    .featured_products_list{
+        flex-direction: column;
+    }
+    .featured_products > h2{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
 }
