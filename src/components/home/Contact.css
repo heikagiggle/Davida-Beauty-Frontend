@@ -6,9 +6,11 @@
 }
 .contact-left {
   display: flex;
-  padding-top: 40px;
+  padding-top: 30px;
 }
-
+.contact-right{
+  width: 400px;
+}
 .contact-right img {
   width: 400px;
 }
@@ -28,22 +30,21 @@
 }
 @media screen and (max-width: 768px) {
   .contact {
-    padding-top: 20rem;
+    padding-top: 30rem;
     flex-direction: column;
-    /* width: 100%; */
   }
   .contact h3 {
-    /* flex-direction: column; */
     text-align: center;
   }
+  .contact-right{
+    width: 200px;
+  }
   .contact-right img {
-    /* display: flex; */
-    /* padding-right: 200px; */
-    width: 400px;
+    width: 300px;
   }
   .right {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 20px;
   }
   .address {

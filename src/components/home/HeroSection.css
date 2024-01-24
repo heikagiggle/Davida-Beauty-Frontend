@@ -48,22 +48,30 @@
   border-radius: 100px;
 }
 
+
 .hero_image:hover {
   transform: scale(1.05);
 }
 
 @media screen and (max-width: 768px) {
   .hero_section {
-    grid-template-columns: 1fr; /* Change to a single column layout */
-    padding: 0 0; /* Adjust padding for smaller screens */
-    text-align: center; /* Center align text */
+    grid-template-columns: 1fr; 
+    padding: 0 0; 
     height: 450px;
   }
   .hero_section > div {
     padding-top: 5rem;
   }
   .hero_image {
-    height: 350px;
+    order: -1; 
+    height: auto; 
+    max-width: 100%; 
+    margin-top: 20px; 
+   
+ 
+  }
+  .hero_section img{
+    width: 300px;
   }
   .hero_title {
     font-size: 30px;

@@ -15,13 +15,15 @@
 }
 @media screen and (max-width: 768px) {
     .featured_products{
-        padding-top: 20rem;
+        padding-top: 25rem;
     }
     .featured_products_list{
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .featured_products > h2{
         font-size: 22px;
         margin-bottom: 20px;
     }
+  
 }

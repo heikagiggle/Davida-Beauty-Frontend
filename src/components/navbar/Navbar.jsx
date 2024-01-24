@@ -28,9 +28,9 @@ const Navbar = () => {
 
   return (
     <nav className="align_center navbar">
-      <div className="align_center">
+      <div className="align_center ">
         <div className="logo">
-          <img src={db} alt="" />
+          <img src={db} alt="logo" />
         </div>
 
         <form className=" navbar_form" onSubmit={handleSubmit}>
