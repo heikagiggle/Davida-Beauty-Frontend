@@ -1,123 +1,158 @@
 .signup_form {
-    width: 40%;
+  width: 40%;
 }
 
 .image_input_section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .image_preview {
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
-    overflow: hidden;
-    margin-bottom: 15px;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-bottom: 15px;
 }
 
 .image_preview img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .image_input {
-    display: none;
+  display: none;
 }
 
 .image_label {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    background: #13296b;
-    color: #fff;
-    font-size: 15px;
-    font-family: inherit;
-    text-transform: uppercase; /* Corrected property value */
-    font-weight: 500;
-    border-radius: 5px;
-    cursor: pointer;
-    width: fit-content;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  background: #13296b;
+  color: #fff;
+  font-size: 15px;
+  font-family: inherit;
+  text-transform: uppercase; /* Corrected property value */
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  width: fit-content;
 }
 
 .form_page {
-    display: flex; /* Corrected property */
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .authentication_form {
-    width: 30%;
-    padding: 32px 48px;
-    margin-top: 32px;
-    background-color: #fff;
+  width: 30%;
+  padding: 32px 48px;
+  margin-top: 32px;
+  background-color: #fff;
 }
 
 .authentication_form h2 {
-    font-size: 40px;
-    margin-bottom: 30px;
-    text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .signup_form_input {
-    width: 100%;
-    display: flex;
-    flex-direction: column; /* Corrected property */
-    gap: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Corrected property */
+  gap: 20px;
 }
 
 .form_inputs div {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .form_inputs label {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 3px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 3px;
 }
 
 .form_text_input {
-    height: 35px;
-    padding: 0 8px;
-    font-size: 17px;
-    font-weight: 500;
-    outline: none;
+  height: 35px;
+  padding: 0 8px;
+  font-size: 17px;
+  font-weight: 500;
+  outline: none;
 }
 
 .form_submit {
-    height: 40px;
-    width: 100%;
-    margin: 25px 0 10px;
+  height: 40px;
+  width: 100%;
+  margin: 25px 0 10px;
 }
 
+/* TODO MOVE THIS FORM ERROR AND SEARCHBUTTON TO APP.CSS */
 .form_error {
-    color: red;
+  color: red;
 }
 
 .search-button {
-    height: 100%;
-    padding: 8px 10px;
-    font-size: 20px;
-    font-weight: 500;
-    border: none;
-    border-radius: 5px;
-    background-color: #13296b;
-    color: #fff;
-    cursor: pointer;
+  height: 100%;
+  padding: 8px 10px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  background-color: #13296b;
+  color: #fff;
+  cursor: pointer;
 }
 
 .signup_textarea_section {
-    grid-column: 1/3;
+  grid-column: 1/3;
 }
 
 .input_textarea {
-    font-size: 17px;
-    font-weight: 500;
-    font-family: inherit;
-    height: 120px;
-    resize: none;
-    padding: 4px 8px;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: inherit;
+  height: 120px;
+  resize: none;
+  padding: 4px 8px;
+  outline: none;
+}
+@media screen and (max-width: 768px) {
+  .signup_form {
+    width: 100%;
+  }
+
+  .image_input {
+    display: none;
+  }
+
+  .authentication_form {
+    width: 100%;
+  }
+
+  .authentication_form h2 {
+    font-size: 14px;
+  }
+
+  .signup_form_input {
+    width: 100%;
+  }
+
+  .form_inputs label {
+    font-size: 14px;
+  }
+
+  .form_text_input {
+    font-size: 14px;
     outline: none;
+  }
+
+  .signup_textarea_section {
+    grid-column: 1/3;
+  }
 }

@@ -48,29 +48,26 @@
   border-radius: 100px;
 }
 
-
 .hero_image:hover {
   transform: scale(1.05);
 }
 
 @media screen and (max-width: 768px) {
   .hero_section {
-    grid-template-columns: 1fr; 
-    padding: 0 0; 
+    grid-template-columns: 1fr;
+    padding: 0 0;
     height: 450px;
   }
   .hero_section > div {
     padding-top: 5rem;
   }
   .hero_image {
-    order: -1; 
-    height: auto; 
-    max-width: 100%; 
-    margin-top: 20px; 
-   
- 
+    order: -1;
+    height: auto;
+    max-width: 100%;
+    margin-top: 5rem;
   }
-  .hero_section img{
+  .hero_section img {
     width: 300px;
   }
   .hero_title {
@@ -78,7 +75,7 @@
     font-weight: 700;
     margin-bottom: 15px;
   }
-  
+
   .hero_subtitle {
     font-size: 18px;
     margin-bottom: 32px;
@@ -86,6 +83,5 @@
   }
   .hero_link {
     padding: 12px 32px;
-   
   }
 }

@@ -1,6 +1,5 @@
 .navbar {
   justify-content: space-between;
-  padding: 0 40px;
   background-color: #fff;
 }
 
@@ -9,7 +8,7 @@
   height: 100px;
   padding-top: 1rem;
 }
-form {
+.navbar form {
   display: flex;
   align-items: center;
 }
@@ -43,6 +42,7 @@ form {
 }
 .navbar_links {
   font-size: 20px;
+  padding-right: 40px;
 }
 .navbar_links > a {
   margin: 15px;
@@ -57,6 +57,46 @@ form {
   font-size: 15px;
   margin-left: 5px;
 }
+.menu-icon {
+  display: none;
+}
+.app__navbar-smallscreen {
+  display: none;
+}
+.app__navbar-smallscreen_overlay {
+  z-index: 99;
+  color: var(--black);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background: white;
+  flex-direction: column;
+  font-weight: 500;
+
+  padding: 7rem;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  transition: all 300ms ease-in;
+}
+.app__navbar-smallscreen_overlay .overlay__close {
+  font-size: 27px;
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+.overlay__open {
+  font-size: 27px;
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+.app__navbar-smallscreen_overlay > a {
+  margin: 2rem;
+}
 
 @media (min-width: 1024px) {
   .navbar_links {
@@ -66,28 +106,33 @@ form {
     margin: 10px;
   }
 }
-@media screen and (max-width: 760px) {
+
+@media screen and (max-width: 768px) {
+  .logo img {
+    width: 120px;
+    height: 80px;
+  }
+  .navbar_heading {
+    margin-right: 0;
+  }
+  .navbar_form {
+    width: 100%;
+    height: 30px;
+    margin-right: 14%;
+  }
+
+  .navbar_search {
+    width: 06%;
+    font-size: 12px;
+  }
+
+  .search_button {
+    font-size: 14px;
+  }
   .navbar_links > a {
     display: none;
   }
-  .navbar_heading{
-    margin-right: 0;
+  .app__navbar-smallscreen {
+    display: flex;
   }
-  
-  form {
-    display: none;
-  }
-  /* .navbar_form{
-    width: 250px;
-    height: 40px;
-    border: 1px solid #cdcdcd;
-    padding: 3px;
-    flex-shrink: 0;
-} */
-  /* .search_button {
-    height: 100%;
-    padding: 0 3px;
-    font-size: 14px;
-    
-} */
 }
