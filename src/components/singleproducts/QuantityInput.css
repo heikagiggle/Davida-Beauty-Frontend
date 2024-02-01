@@ -2,7 +2,7 @@
     width: 35px;
     height: 35px;
     font-size: 25px;
-    background-color: #ff8848;
+    background-color: #B8860B;
     color: #fff;
     border: none;
     border-radius: 100%;
@@ -17,4 +17,16 @@
 .quantity_input_count {
     margin: 0 40px;
     text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .quantity_input_button {
+        width: 25px;
+        height: 25px;
+        font-size: 20px;
+       
+    }
+    .quantity_input_count {
+        margin: 0 10px;
+        text-align: center;
+    }
 }

@@ -133,7 +133,6 @@ const Navbar = () => {
                   onClick={() => setToggleMenu(false)}
                 >
                   Cart <p className="align_center cart_counts">{cart.length}</p>
-                  {console.log(cart)}
                 </NavLink>
               </>
             )}
