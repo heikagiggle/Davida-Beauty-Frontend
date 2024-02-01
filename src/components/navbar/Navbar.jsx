@@ -130,7 +130,7 @@ const Navbar = () => {
                 <NavLink
                   to="/cart→"
                   className="align_center"
-                  onClick={setToggleMenu}
+                  onClick={() => setToggleMenu(false)}
                 >
                   Cart <p className="align_center cart_counts">{cart.length}</p>
                 </NavLink>
