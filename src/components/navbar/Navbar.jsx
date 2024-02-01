@@ -128,11 +128,12 @@ const Navbar = () => {
                   onLinkClick={handleLinkClick}
                 />
                 <NavLink
-                  to="/cart→"
+                  to="/cart"
                   className="align_center"
                   onClick={() => setToggleMenu(false)}
                 >
                   Cart <p className="align_center cart_counts">{cart.length}</p>
+                  {console.log(cart)}
                 </NavLink>
               </>
             )}
