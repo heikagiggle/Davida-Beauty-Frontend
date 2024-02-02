@@ -3,3 +3,9 @@
     grid-template-columns: 1fr 4fr;
     padding: 20px;
 }
+@media screen and (max-width:768px) {
+    .product_page{
+        display: flex;
+        flex-direction: column;
+    }
+}

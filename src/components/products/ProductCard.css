@@ -1,5 +1,5 @@
 .product_card {
-  max-width: 275px;
+  /* max-width: 275px; */
   height: 330px;
   margin: 20px;
   border-radius: 12px;
@@ -7,7 +7,7 @@
   background-color: #fff;
   overflow: hidden;
   /* width: auto; */
-  /* max-width: 100%; */
+  max-width: 100%;
 }
 .product_image {
   height: 200px;

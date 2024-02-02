@@ -37,3 +37,14 @@
     max-width: 1920px;
   }
 }
+@media screen and (max-width: 768px) {
+  .products_list_header {
+    padding-top: 1rem;
+  }
+  .products_list_header h2 {
+    font-size: 20px;
+  }
+  .products_list_section {
+    max-width: 100%;
+  }
+}
