@@ -1,6 +1,7 @@
-footer {
-  padding: 0 40px 0;
-  background-color: #fff;
+.footer-footer {
+  padding: 20px 40px 0;
+  background-color: #13296b;
+  color: #fff;
 }
 .footer {
   display: flex;
@@ -8,6 +9,7 @@ footer {
 }
 .footer-logo {
   display: flex;
+  gap: 10px;
 }
 .footer-logo p {
   font-weight: 600;
@@ -16,6 +18,7 @@ footer {
 .footer-links {
   display: flex;
   padding-bottom: 20px;
+  cursor: pointer;
 }
 .icon {
   margin-right: 10px;

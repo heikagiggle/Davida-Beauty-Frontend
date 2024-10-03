@@ -19,6 +19,7 @@ const Contact = () => {
           </div>
           <div className="right">
             <div className="one">
+              <p>Work hours</p>
               <p>
                 Monday - Saturday <br />
                 9am - 8pm{" "}
@@ -27,7 +28,7 @@ const Contact = () => {
             <div className="two">
               <p>
                 Sunday <br />
-                1pm - 8pm{" "}
+                1pm - 6pm{" "}
               </p>
             </div>
           </div>

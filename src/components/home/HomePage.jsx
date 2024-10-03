@@ -1,8 +1,9 @@
 import hero from "../../assets/hero.png";
+import why from "../../assets/why.png";
 import HeroSection from "./HeroSection";
 import FeaturedProducts from "./FeaturedProducts";
-import Footer from "./Footer";
 import Contact from "./Contact";
+import Why from "./Why";
 
 const HomePage = () => {
   return (
@@ -10,7 +11,7 @@ const HomePage = () => {
       <HeroSection
         title="Welcome to Davida Beauty"
         subtitle="Feel free to explore our shop, we love you and we are happy to have you."
-        link="/product/65a403e462d14cbea478df7f"
+        link="/book"
         image={hero}
       />
 
@@ -23,9 +24,13 @@ const HomePage = () => {
         image={hero}
       />
 
+      <Why
+        title="Why Davida Beauty?"
+        image={why}
+      />
+
       <Contact />
 
-      <Footer />
     </div>
   );
 };

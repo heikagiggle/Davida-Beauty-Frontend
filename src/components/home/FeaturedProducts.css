@@ -1,5 +1,6 @@
 .featured_products {
     margin: 65px;
+    position: relative; /* Added for overlay positioning */
 }
 
 .featured_products > h2 {
@@ -13,17 +14,51 @@
     justify-content: space-evenly;
     margin-bottom: 65px;
 }
+
+.coming_soon_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+    z-index: 1; 
+}
+
 @media screen and (max-width: 768px) {
-    .featured_products{
+    .featured_products {
         padding-top: 25rem;
     }
-    .featured_products_list{
+    .featured_products_list {
         flex-wrap: wrap;
         justify-content: center;
     }
-    .featured_products > h2{
+    .featured_products > h2 {
         font-size: 22px;
         margin-bottom: 20px;
     }
-  
+
+    .coming_soon_overlay {
+        position: absolute;
+        top: 30rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.1); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 3rem;
+        z-index: 1; 
+    }
+
+    .coming_soon_overlay span {
+        font-size: 2rem;
+    }
 }

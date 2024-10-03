@@ -57,6 +57,8 @@ const ProductList = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [data, isLoading]);
 
+  const isComingSoon = true;
+
   return (
     <section className="products_list_section">
       <header className="align_center products_list_header">
@@ -78,6 +80,12 @@ const ProductList = () => {
           ))}
         {isLoading && skeletons.map((n) => <ProductCardSkeleton key={n} />)}
       </div>
+
+      {isComingSoon && (
+        <div className="coming_soon_overlay">
+          <span>Coming Soon</span>
+        </div>
+      )}
     </section>
   );
 };

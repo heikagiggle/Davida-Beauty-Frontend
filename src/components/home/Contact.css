@@ -1,12 +1,13 @@
 .contact {
   display: flex;
   justify-content: space-between;
-  padding: 40px 40px 0;
+  padding: 40px 10rem 0;
   background-color: #fff;
 }
 .contact-left {
   display: flex;
   padding-top: 30px;
+  font-weight: 500;
 }
 .contact-right{
   width: 400px;
@@ -27,14 +28,22 @@
 .contact-map {
   text-decoration: underline;
   font-weight: 100;
+  color: blue;
 }
 @media screen and (max-width: 768px) {
   .contact {
-    padding-top: 30rem;
+    margin-top: 30rem;
     flex-direction: column;
+    padding: 0 20px;
   }
   .contact h3 {
     text-align: center;
+  }
+  .contact-left {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    width: 100%;
   }
   .contact-right{
     width: 200px;
@@ -43,9 +52,7 @@
     width: 300px;
   }
   .right {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 20px;
+    padding: 20px 5px 0;
   }
   .address {
     width: 0px;

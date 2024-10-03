@@ -55,7 +55,7 @@ const Navbar = () => {
         {!user && (
           <>
             {" "}
-            <LinkWithIcon title="LogIn" link="/login" />
+            <LinkWithIcon title="Login" link="/login" />
             <LinkWithIcon title="SignUp" link="/signup" />
           </>
         )}
