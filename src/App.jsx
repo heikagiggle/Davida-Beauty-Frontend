@@ -17,12 +17,6 @@ import {
 import UserContext from "./contexts/UserContext";
 import CartContext from "./contexts/CartContext";
 import Footer from "./components/home/Footer";
-import {
-  WixProvider,
-  OAuthStrategy,
-  AppStrategy,
-  useWixModules,
-} from "@wix/sdk-react";
 
 setAuthToken(getJwt());
 
@@ -127,26 +121,20 @@ const App = () => {
   }, [user]);
 
   return (
-    <WixProvider
-      auth={OAuthStrategy({
-        clientId: "<CLIENT_ID>",
-      })}
-    >
-      <UserContext.Provider value={user}>
-        <CartContext.Provider
-          value={{ cart, addToCart, removeFromCart, updateCart, setCart }}
-        >
-          <div className="app">
-            <Navbar />
-            <main>
-              <ToastContainer position="bottom-right" />
-              <Routing />
-            </main>
-            <Footer />
-          </div>
-        </CartContext.Provider>
-      </UserContext.Provider>
-    </WixProvider>
+    <UserContext.Provider value={user}>
+      <CartContext.Provider
+        value={{ cart, addToCart, removeFromCart, updateCart, setCart }}
+      >
+        <div className="app">
+          <Navbar />
+          <main>
+            <ToastContainer position="bottom-right" />
+            <Routing />
+          </main>
+          <Footer />
+        </div>
+      </CartContext.Provider>
+    </UserContext.Provider>
   );
 };
 
