@@ -33,7 +33,7 @@ const Book = () => {
         </p>
       </div>
       <div className="mt-5 xl:-mt-[30px]">
-        <CalendlyEmbed url="https://calendly.com/davidabeauty-ng" />
+        <CalendlyEmbed url="https://calendly.com/davidabeauty-ng?hide_landing_page_details=1&hide_gdpr_banner=1" />
       </div>
     </div>
   );
