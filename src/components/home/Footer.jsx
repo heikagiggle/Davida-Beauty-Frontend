@@ -59,7 +59,7 @@ const Footer = () => {
             <FaInstagram className="icon" />
           </a>
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/share/19iDvgYSCr/?mibextid=LQQJ4d"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -43,12 +43,11 @@
   }
   .contact-left {
     padding: 10px 20px;
+    font-size: 14px;
+    color: grey;
   }
   .contact-right{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 2rem;
+    display: none;
   }
   .contact-logo{
     width: 100%;
