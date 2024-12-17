@@ -5,7 +5,7 @@
 
 .logo img {
   width: 150px;
-  height: 100px;
+  height: 150px;
   padding-top: 1rem;
 }
 .navbar form {
@@ -109,8 +109,8 @@
 
 @media screen and (max-width: 768px) {
   .logo img {
-    width: 120px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
   }
   .navbar_heading {
     margin-right: 0;

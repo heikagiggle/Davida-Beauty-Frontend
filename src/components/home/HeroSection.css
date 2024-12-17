@@ -55,17 +55,16 @@
 @media screen and (max-width: 768px) {
   .hero_section {
     grid-template-columns: 1fr;
-    padding: 0 0;
-    height: 450px;
-  }
-  .hero_section > div {
-    padding-top: 5rem;
+    padding: 5rem 0 0;
+    height: auto;
   }
   .hero_image {
     order: -1;
     height: auto;
     max-width: 100%;
-    margin-top: 5rem;
+  }
+  .mobile{
+    padding-bottom: 2rem;
   }
   .hero_section img {
     width: 300px;
@@ -79,8 +78,6 @@
 
   .hero_subtitle {
     font-size: 18px;
-    margin-bottom: 32px;
-    width: 70%;
   }
   .hero_link {
     padding: 12px 32px;

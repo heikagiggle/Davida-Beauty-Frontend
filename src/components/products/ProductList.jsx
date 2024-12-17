@@ -82,7 +82,7 @@ const ProductList = () => {
       </div>
 
       {isComingSoon && (
-        <div className="coming_soon_overlay">
+        <div className="coming_soon_overlayy">
           <span>Coming Soon</span>
         </div>
       )}

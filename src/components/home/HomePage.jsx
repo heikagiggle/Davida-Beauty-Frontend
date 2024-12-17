@@ -13,6 +13,7 @@ const HomePage = () => {
         subtitle="Feel free to explore our shop, we love you and we are happy to have you."
         link="/book"
         image={hero}
+        button="Book Appointment"
       />
 
       <FeaturedProducts />
@@ -22,6 +23,7 @@ const HomePage = () => {
         subtitle="Are you style savvy? Do you want to be one of the best and most sort after hairstylist in the world? Come be a professional within 3 months"
         link="https://forms.gle/zZSS74jwK4v5j9hw9"
         image={hero}
+        button="Get Started"
       />
 
       <Why

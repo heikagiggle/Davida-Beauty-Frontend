@@ -1,6 +1,6 @@
 .featured_products {
     margin: 65px;
-    position: relative; /* Added for overlay positioning */
+    position: relative;   /* Added for overlay positioning */
 }
 
 .featured_products > h2 {
@@ -32,7 +32,7 @@
 
 @media screen and (max-width: 768px) {
     .featured_products {
-        padding-top: 25rem;
+        padding-top: 2rem;
     }
     .featured_products_list {
         flex-wrap: wrap;
@@ -45,7 +45,7 @@
 
     .coming_soon_overlay {
         position: absolute;
-        top: 30rem;
+        top: 10rem;
         left: 0;
         right: 0;
         bottom: 0;

@@ -1,6 +1,7 @@
 .products_list_section {
   padding: 10px;
   padding-left: 30px;
+  position: relative;
 }
 
 .products_list_header {
@@ -26,6 +27,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+.coming_soon_overlayy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+  z-index: 1;
 }
 @media (min-width: 1024px) {
   .products_list {
