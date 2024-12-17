@@ -36,6 +36,7 @@
     flex-direction: column;
     padding: 40px 1rem 40px;
     align-items: flex-start;
+    height: auto;
   }
   .contact h3 {
     text-align: center;
