@@ -77,9 +77,11 @@
   }
 
   .hero_subtitle {
-    font-size: 18px;
+    font-size: 17px;
+    width: 90%;
   }
   .hero_link {
     padding: 12px 32px;
+    font-size: 15px;
   }
 }
