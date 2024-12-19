@@ -9,15 +9,15 @@
 }
 .footer-logo {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 5px;
 }
 .footer-logo p {
-  font-weight: 600;
+  font-weight: 400;
   padding-top: 5px;
 }
 .footer-links {
   display: flex;
-  padding-bottom: 20px;
   cursor: pointer;
 }
 .icon {
@@ -26,11 +26,17 @@
 .bottom {
   text-align: center;
   padding: 20px 0;
+  font-size: 14px;
+  font-weight: 200;
 }
 .second-div {
-  padding-bottom: 20px;
+  padding: 10px 0;
+  line-height: 0.7;
 }
-.input{
+.second-div h3 {
+  font-size: 15px;
+}
+.input {
   width: 100%;
 }
 .input-box {
@@ -62,6 +68,9 @@
   .footer {
     flex-direction: column;
     width: 100%;
+  }
+  .footer-links{
+    padding-bottom: 40px 0 20px;
   }
   .second-div h3 {
     text-align: left;

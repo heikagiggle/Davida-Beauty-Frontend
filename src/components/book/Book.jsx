@@ -1,13 +1,65 @@
 import "./Book.css";
-import { CalendlyEmbed } from "./calendly-wrapper";
+import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+
+const hairstylesList = [
+  {
+    name: "Hailee Steinfeld",
+    description:
+      "as Violet, a Zaunite orphan, later Piltover enforcer, and Jinx sister",
+    price: "40,000",
+    link: "/book/calendly",
+  },
+  {
+    name: "Kevin Alejandro",
+    description:
+      "as Jayce Talis, a scientist, inventor, and eventual Councilor from Piltover, responsible for the creation of Hextech",
+    price: "40,000",
+    link: "/book/calendly",
+  },
+  {
+    name: "Katie Leung",
+    description:
+      "as Caitlyn Kiramman, a Piltover enforcer, daughter of Councilor Cassandra Kiramman, and former lab assistant to Jayce Talis, who becomes a love interest",
+    price: "40,000",
+    link: "/book/calendly",
+  },
+  {
+    name: "Toks Olagundoye",
+    description:
+      "as Mel Medarda, a council member who takes an interest in Jayce and experiments, later begins a relationship with him",
+    price: "40,000",
+    link: "/book/calendly",
+  },
+  {
+    name: "Harry Lloyd",
+    description:
+      "as Viktor, a disabled partner and former assistant to Councilor Cecil B.",
+    price: "40,000",
+    link: "/book/calendly",
+  },
+  {
+    name: "Jason Spisak",
+    description:
+      "as Silco, a crime lord in Zaun, second adoptive father, and leader of the chem-barons",
+    price: "40,000",
+    link: "/book/calendly",
+  },
+  {
+    name: "Reed Shannon",
+    description:
+      "as Ekko, a childhood friend of Vi and Jinx, and the leader of the revolutionary Zaunite group, the Firelights",
+    price: "40,000",
+    link: "/book/calendly",
+  },
+];
 
 const Book = () => {
   const navigate = useNavigate();
   return (
-    <div className="book">
+    <>
       <div className="back-button" onClick={() => navigate(-1)}>
-      <svg
+        <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -24,18 +76,24 @@ const Book = () => {
         </svg>
         <span>Back</span>
       </div>
-
-      <div className="book-header">
-        <h1>Book an Appointment</h1>
-        <p className="text">
-          We’re excited to meet you! Please choose a convenient time to schedule
-          your appointment. It is quick and easy.
-        </p>
+      <div className="book-container">
+        <div className="book-header">
+          <h1>Book an Appointment</h1>
+          <p className="text">Kindly select your hairsyle below:</p>
+        </div>
+        <ul className="hairstyles">
+          {hairstylesList.map((hairstyle, index) => (
+            <li key={index}>
+              <Link to={hairstyle.link}>
+                <span className="links-text">{hairstyle.name}</span>
+              </Link>{" "}
+              {hairstyle.description}{" "}
+              <span className="prices">{hairstyle.price}</span>
+            </li>
+          ))}
+        </ul>
       </div>
-      <div className="mt-5 xl:-mt-[30px]">
-        <CalendlyEmbed url="https://calendly.com/davidabeauty-ng?hide_landing_page_details=1&hide_gdpr_banner=1" />
-      </div>
-    </div>
+    </>
   );
 };
 

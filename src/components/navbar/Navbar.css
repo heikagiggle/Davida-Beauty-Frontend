@@ -109,8 +109,8 @@
 
 @media screen and (max-width: 768px) {
   .logo img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
   }
   .navbar_heading {
     margin-right: 0;
@@ -122,7 +122,7 @@
   }
 
   .navbar_search {
-    width: 06%;
+    width: 100%;
     font-size: 12px;
   }
 
