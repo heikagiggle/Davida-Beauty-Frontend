@@ -26,7 +26,7 @@ const CalendlyContainer = () => {
 
       <div className="book-header">
         <p className="calendly-text">
-          We’re excited to meet you! Please choose a convenient time to schedule
+          We’re excited to meet you! Kindly choose a convenient time to schedule
           your appointment. It is quick and easy.
         </p>
       </div>
