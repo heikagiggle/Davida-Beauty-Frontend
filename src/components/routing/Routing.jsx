@@ -9,14 +9,14 @@ import Logout from "./../authentication/Logout";
 import SignUp from "../authentication/SignUp";
 import ProtectedRoute from "./ProtectedRoute";
 import Book from "../book/Book";
-import CalendlyContainer from "../book/calendly/CalendlyContainer";
+// import CalendlyContainer from "../book/calendly/CalendlyContainer";
 
 const Routing = () => {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/book" element={<Book />} />
-      <Route path="/book/calendly" element={<CalendlyContainer />} />
+      {/* <Route path="/book/calendly" element={<CalendlyContainer />} /> */}
       <Route path="/products" element={<ProductPage />} />
       <Route path="/product/:id" element={<SingleProduct />} />
       <Route path="/signup" element={<SignUp />} />

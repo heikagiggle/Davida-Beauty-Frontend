@@ -62,34 +62,33 @@ const Book = () => {
               ))}
             </ul> */}
             <ul className="hairstyles">
-  {category.items.map((hairstyle, index) => (
-    <li
-      key={index}
-      className={`hairstyle-item ${
-        hairstyle.name.includes("My hairstyle is not on the list")
-          ? "not-on-list"
-          : ""
-      }`}
-      style={
-        hairstyle.name.includes("My hairstyle is not on the list")
-          ? { paddingTop: "2rem", paddingBottom: "2rem" }
-          : {}
-      }
-    >
-      <Link to={hairstyle.link}>
-        <span className="links-text">{hairstyle.name}: </span>
-        <span className="links-desc">{hairstyle.desc}</span>
-      </Link>
-      <span className="prices">
-        {hairstyle.displayPricePrefix
-          ? `${hairstyle.displayPricePrefix} `
-          : ""}
-        ₦{hairstyle.price}
-      </span>
-    </li>
-  ))}
-</ul>
-
+              {category.items.map((hairstyle, index) => (
+                <li
+                  key={index}
+                  className={`hairstyle-item ${
+                    hairstyle.name.includes("My hairstyle is not on the list")
+                      ? "not-on-list"
+                      : ""
+                  }`}
+                  style={
+                    hairstyle.name.includes("My hairstyle is not on the list")
+                      ? { paddingTop: "2rem", paddingBottom: "2rem" }
+                      : {}
+                  }
+                >
+                  <Link to={hairstyle.link}>
+                    <span className="links-text">{hairstyle.name}: </span>
+                    <span className="links-desc">{hairstyle.desc}</span>
+                  </Link>
+                  <span className="prices">
+                    {hairstyle.displayPricePrefix
+                      ? `${hairstyle.displayPricePrefix} `
+                      : ""}
+                    ₦{hairstyle.price}
+                  </span>
+                </li>
+              ))}
+            </ul>
           </div>
         ))}
       </div>

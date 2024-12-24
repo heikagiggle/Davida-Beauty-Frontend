@@ -26,7 +26,7 @@ export const hairstylesList = [
         displayPricePrefix: "",
       },
       {
-        name: "Bob - shoulder length (smedium)",
+        name: "Bob - shoulder length (medium)",
         price: 13000,
         link: "/book/calendly",
         desc: "",
