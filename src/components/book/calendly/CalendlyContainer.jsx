@@ -1,8 +1,15 @@
 import "./Calendly.css";
 import { CalendlyEmbed } from "./calendly-wrapper";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 const CalendlyContainer = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    // Scroll to the top of the page when the component is loaded
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className="calendly">
       <div className="back-button" onClick={() => navigate(-1)}>
