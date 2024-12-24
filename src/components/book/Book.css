@@ -1,27 +1,3 @@
-.book-container{
-  display: flex;
-  flex-direction: column;
-  margin: 2rem 3rem;
-  padding: 0rem 3rem;
-  min-height: 100vh;
-}
-.book-header {
-  text-align: center;
-  align-items: center;
-}
-.book-header h1 {
-  padding: 20px 0;
-}
-.book-header p {
-  text-wrap: wrap;
-}
-
-.text{
-  font-size: 20px;
-  line-height: 1.5;
-  text-align: left;
-  font-weight: 500;
-}
 .back-button {
   display: flex;
   align-items: center;
@@ -34,43 +10,96 @@
 .back-button:hover {
   color: #0056b3;
 }
-.book-container-head p{
-  padding: 20px 0 10px;
-  font-size: 18px;
+.book-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 3rem 5rem;
+  padding: 0rem 3rem;
+  min-height: 100vh;
 }
-.hairstyles{
+.book-header {
+  text-align: center;
+  align-items: center;
+}
+.book-header h1 {
+  padding: 20px 0;
+  text-transform: capitalize;
+}
+.book-header p {
+  text-wrap: wrap; 
+}
+.text {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: 500;
+}
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  margin: 1rem 0 0.5rem;
+}
+
+.category-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.category-description {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+  padding-left: 10px;
+}
+.hairstyles {
   display: flex;
   justify-content: center;
-  padding-top: 1rem;
   flex-direction: column;
   gap: 20px;
   font-size: 14px;
+  margin: 0 1rem;
 }
-.links-text{
+.links-desc {
+  color: #666;
+  font-weight: 400;
+}
+.links-text {
   font-size: 16px;
   cursor: pointer;
-  color: cadetblue;
+  color: #13296b;
 }
-.prices{
+.prices {
   font-weight: bold;
 }
-@media screen and (max-width:768px) {
-  .book-container{
+@media screen and (max-width: 768px) {
+  .book-container {
     display: flex;
     flex-direction: column;
     padding: 0;
+    margin: 2rem 2rem 5rem;
   }
   .book {
     padding: 20px 10px;
   }
-  .text{
+  .text {
     font-size: 14px;
     line-height: 1.5;
   }
-  .book-header h1{
+  .book-header h1 {
     font-size: 25px;
   }
-  .text{
+  .text {
     font-size: 16px;
+  }
+  .category-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+  .category-description {
+    font-size: 14px;
+    margin: 0;
+    padding-left: 0;
   }
 }

@@ -5,6 +5,7 @@ import { hairstylesList } from "./data";
 
 const Book = () => {
   const navigate = useNavigate();
+
   return (
     <>
       <div className="back-button" onClick={() => navigate(-1)}>
@@ -27,20 +28,70 @@ const Book = () => {
       </div>
       <div className="book-container">
         <div className="book-header">
-          <h1>Book an Appointment</h1>
-          <p className="text">Kindly select your hairsyle below:</p>
+          <h1>BOOK AN APPOINTMENT</h1>
+          <p className="text">
+            Prices include ALL materials needed for the service EXCEPT the Hair
+            extensions (Braiding hair/attachment, kinky, passion twist, boho
+            curls, locs, etc.).
+          </p>
         </div>
-        <ul className="hairstyles">
-          {hairstylesList.map((hairstyle, index) => (
-            <li key={index}>
-              <Link to={hairstyle.link}>
-                <span className="links-text">{hairstyle.name}</span>
-              </Link>{" "}
-              {hairstyle.description}{" "}
-              <span className="prices">{hairstyle.price}</span>
-            </li>
-          ))}
-        </ul>
+
+        {hairstylesList.map((category, categoryIndex) => (
+          <div key={categoryIndex} className="category">
+            <div className="category-header">
+              <h3 className="category-title">{category.category}: </h3>
+              {category.description && (
+                <p className="category-description">{category.description}</p>
+              )}
+            </div>
+            {/* <ul className="hairstyles">
+              {category.items.map((hairstyle, index) => (
+                <li key={index} className="hairstyle-item">
+                  <Link to={hairstyle.link}>
+                  {hairstyle.name.includes("My hairstyle is not on the list") ? "From " : ""}
+                    <span className="links-text">{hairstyle.name}: </span>
+                    <span className="links-desc">{hairstyle.desc} </span>
+                  </Link>
+                  <span className="prices">
+                    {hairstyle.displayPricePrefix
+                      ? `${hairstyle.displayPricePrefix} `
+                      : ""}
+                    ₦{hairstyle.price}
+                  </span>
+                </li>
+              ))}
+            </ul> */}
+            <ul className="hairstyles">
+  {category.items.map((hairstyle, index) => (
+    <li
+      key={index}
+      className={`hairstyle-item ${
+        hairstyle.name.includes("My hairstyle is not on the list")
+          ? "not-on-list"
+          : ""
+      }`}
+      style={
+        hairstyle.name.includes("My hairstyle is not on the list")
+          ? { paddingTop: "2rem", paddingBottom: "2rem" }
+          : {}
+      }
+    >
+      <Link to={hairstyle.link}>
+        <span className="links-text">{hairstyle.name}: </span>
+        <span className="links-desc">{hairstyle.desc}</span>
+      </Link>
+      <span className="prices">
+        {hairstyle.displayPricePrefix
+          ? `${hairstyle.displayPricePrefix} `
+          : ""}
+        ₦{hairstyle.price}
+      </span>
+    </li>
+  ))}
+</ul>
+
+          </div>
+        ))}
       </div>
     </>
   );
