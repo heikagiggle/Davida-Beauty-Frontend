@@ -36,7 +36,7 @@
 }
 .category-header {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   padding: 10px 0;
   margin: 1rem 0 0.5rem;
 }

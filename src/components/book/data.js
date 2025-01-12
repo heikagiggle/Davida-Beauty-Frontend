@@ -297,6 +297,55 @@ export const hairstylesList = [
     ],
   },
   {
+    category: "Pedicure and Manicure",
+    description:
+    "Prices are for Females only. Additional ₦3000 for Males.",
+    items: [
+      {
+        name: "Regular Pedicure",
+        price: 10000,
+        link: "/book/calendly",
+        desc: " A spa treatment that involves soaking your feet in a foot soak or sea salt solution followed by other exfoliating and treating processes to get rid of the dead skin cells. ",
+        displayPricePrefix: "",
+      },
+      {
+        name: "Jelly pedicure",
+        price: 13000,
+        link: "/book/calendly",
+        desc: "A spa treatment that involves soaking your hands in a jelly-like solution that's made from natural extracts and essential oils, followed by other exfoliating processes to get rid of the dead skin cells. ",
+        displayPricePrefix: "",
+      },
+      {
+        name: "Regular manicure",
+        price: 5000,
+        link: "/book/calendly",
+        desc: " ",
+        displayPricePrefix: "",
+      },
+      {
+        name: "Jelly manicure",
+        price: 6000,
+        link: "/book/calendly",
+        desc: " ",
+        displayPricePrefix: "",
+      },
+      {
+        name: "Regular Pedicure & manicure combo",
+        price: 13000,
+        link: "/book/calendly",
+        desc: "",
+        displayPricePrefix: "",
+      },
+      {
+        name: "Jelly pedicure & manicure combo",
+        price: 17000,
+        link: "/book/calendly",
+        desc: "",
+        displayPricePrefix: "",
+      },
+    ],
+  },
+  {
     category: "Ad Ons",
     description: "",
     items: [
