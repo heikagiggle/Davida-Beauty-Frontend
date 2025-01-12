@@ -24,7 +24,7 @@ const ProductCard = ({ product }) => {
       </div>
 
       <div className="product_details">
-        <h3 className="product_price">${product?.price}</h3>
+        <h3 className="product_price">₦{product?.price}</h3>
         <p className="product_title">{product?.title}</p>
 
         <footer className="align_center product_info_footer">
