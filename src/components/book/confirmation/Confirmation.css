@@ -1,0 +1,49 @@
+.confirmation-container {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 3rem 5rem;
+  padding: 0rem 3rem;
+  background: #fff;
+  min-height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+.inner-confirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+}
+.cancellation-policy {
+  display: flex;
+  flex-direction: column;
+  gap: 6px 0;
+  padding-bottom: 40px;
+}
+.cancellation-policy h2 {
+  font-size: 24px;
+  margin-top: 1rem;
+  text-align: center;
+}
+.cancellation-policy p {
+  text-align: center;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .confirmation-container{
+        padding: 0rem 2rem;
+        margin: 2rem 1rem 5rem;
+    }
+    .inner-confirmation{
+        width: 100%;
+    }
+    .cancellation-policy h2{
+        font-size: 18px;
+    }
+    .cancellation-policy p{
+        text-align: left;
+        font-size: 14px;
+    }
+}
+

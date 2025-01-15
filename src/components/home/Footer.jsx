@@ -1,8 +1,37 @@
+import { useState } from "react";
 import "./Footer.css";
 import { FaInstagram, FaTiktok, FaFacebook } from "react-icons/fa";
 // import { BsFillTelephoneFill,  FaHome } from "react-icons/bs";
+import { collection, addDoc } from "firebase/firestore";
+import { db } from "../../utils/firebase";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if(!email){
+      setMessage("Please enter your email address");
+      return;
+    }
+    setLoading(true);
+    setMessage('')
+
+    try {
+      const emailCollection = collection(db, "emails");
+      await addDoc(emailCollection, { email });
+      setMessage("Subscription successful!");
+      setEmail("");
+    } catch (error) {
+      setMessage("Failed to subscribe. Please try again later.");
+    }finally{
+      setLoading(false);
+    }
+   
+  };
+
   return (
     <footer className="footer-footer">
       <div className="footer">
@@ -36,16 +65,19 @@ const Footer = () => {
           <h3>Subscribe</h3>
           <p>Sign up to our mailing list</p>
           <div className="input">
-            <form action="">
+            <form action="" onSubmit={handleSubmit}>
               <input
                 type="email"
                 className="input-box"
-                placeholder="Input Email"
+                placeholder="Enter Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
-              <button type="submit" className="footerbtn" onClick={() => close}>
-                OK
+              <button type="submit" className="footerbtn" disabled={loading}>
+                {loading ? "..." : "Ok"}
               </button>
             </form>
+            {message && <p className="message">{message}</p>}
           </div>
         </div>
         <div className="footer-links">
