@@ -18,8 +18,8 @@ export function CalendlyEmbed({ url }) {
       if (event.data.event === "calendly.event_scheduled") {
         console.log("Booking completed!");
         setTimeout(() => {
-          window.location.href = "/book/confirmation"; 
-        }, 500);
+          window.location.href = "/book/confirmation";
+        }, 50);
       }
     };
 
