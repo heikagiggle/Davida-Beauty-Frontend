@@ -19,7 +19,7 @@ export function CalendlyEmbed({ url }) {
         console.log("Booking completed!");
         setTimeout(() => {
           window.location.href = "/book/confirmation"; 
-        }, 5000);
+        }, 500);
       }
     };
 
