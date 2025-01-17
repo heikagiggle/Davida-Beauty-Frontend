@@ -17,8 +17,76 @@
   height: 100vh;
   padding: 0;
 }
+.whatsapp-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.whatsapp {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  text-decoration: underline;
+  color: #2e2e2e;
+  font-size: 18px;
+  font-weight: 600;
+}
+.cancellation-policy {
+  display: flex;
+  flex-direction: column;
+  gap: 6px 0;
+  padding-bottom: 40px;
+}
+.cancellation-policy h2 {
+  font-size: 24px;
+  margin-top: 1rem;
+  text-align: center;
+}
+.cancellation-policy p {
+  text-align: center;
+  font-size: 18px;
+}
+.book {
+  padding: 20px 60px;
+  min-height: 100vh;
+}
+.book-header {
+  text-align: center;
+  align-items: center;
+}
+.book-header h1 {
+  padding: 20px 0;
+}
+.book-header p {
+  text-wrap: wrap;
+}
+
+.text {
+  font-size: 20px;
+  line-height: 1.5;
+}
+.back-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.back-button:hover {
+  color: #0056b3;
+}
 
 @media screen and (max-width: 768px) {
+  .book {
+    padding: 20px 10px;
+  }
+  .text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
   .calendly-text {
     margin: 20px 15px;
     font-size: 14px;
@@ -29,5 +97,17 @@
     width: 100%;
     min-height: 100%;
     margin-bottom: 2rem;
+  }
+  .cancellation-policy h2 {
+    font-size: 18px;
+  }
+  .cancellation-policy p {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .whatsapp {
+    font-size: 16px;
+    font-weight: 600;
   }
 }

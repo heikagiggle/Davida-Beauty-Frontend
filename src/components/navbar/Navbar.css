@@ -1,16 +1,17 @@
 .navbar {
   justify-content: space-between;
   background-color: #fff;
+  padding: 2rem 1rem;
 }
 
 .logo img {
-  width: 150px;
-  height: 150px;
-  padding-top: 1rem;
+  width: 65px;
+  height: 65px;
 }
 .navbar form {
   display: flex;
   align-items: center;
+  margin: 0 10px;
 }
 .navbar_form {
   width: 450px;
@@ -99,18 +100,36 @@
 }
 
 @media (min-width: 1024px) {
+  .navbar {
+    padding: 2rem 0.5rem 2rem 2rem;
+  }
   .navbar_links {
     font-size: 15px;
   }
   .navbar_links > a {
     margin: 10px;
   }
+  .logo img {
+    width: 65px;
+    height: 65px;
+  }
+  .navbar form {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+  }
+  
 }
 
 @media screen and (max-width: 1023px) {
   .logo img {
-    width: 100px;
-    height: 100px;
+    width: 65px;
+    height: 65px;
+  }
+  .navbar form {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
   }
   .navbar_heading {
     margin-right: 0;

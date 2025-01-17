@@ -2,6 +2,8 @@ import "./Calendly.css";
 import { CalendlyEmbed } from "./calendly-wrapper";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import { WhatsApp } from "../../../assets/icons/whatsapp-icon";
+import { CaretRightIcon } from "../../../assets/icons/caret-right";
 const CalendlyContainer = () => {
   const navigate = useNavigate();
 
@@ -9,7 +11,7 @@ const CalendlyContainer = () => {
     // Scroll to the top of the page when the component is loaded
     window.scrollTo(0, 0);
   }, []);
-  
+
   return (
     <div className="calendly">
       <div className="back-button" onClick={() => navigate(-1)}>
@@ -38,8 +40,29 @@ const CalendlyContainer = () => {
         </p>
       </div>
 
-      <div className="my-5 xl:-mt-[30px]">
+      <div>
         <CalendlyEmbed url="https://calendly.com/davidabeauty-ng?hide_landing_page_details=1&hide_gdpr_banner=1" />
+      </div>
+
+      <div className="whatsapp-container">
+        <a
+          href="https://wa.me/message/DPGCL43UFNF4N1"
+          target="_blank"
+          rel="noreferrer"
+          className="whatsapp"
+        >
+          <WhatsApp />
+          <p>Whatsapp Link</p>
+          <CaretRightIcon />
+        </a>
+        <div className="cancellation-policy">
+          <h2>Cancellation Policy</h2>
+          <p>
+            Please note that you can only cancel or reschedule 24 hours before
+            your appointment time. Failure to do this will incur a cost of your
+            deposit fee. Thank you.
+          </p>
+        </div>
       </div>
     </div>
   );

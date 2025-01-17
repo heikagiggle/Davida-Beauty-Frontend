@@ -10,7 +10,6 @@ import SignUp from "../authentication/SignUp";
 import ProtectedRoute from "./ProtectedRoute";
 import Book from "../book/Book";
 import CalendlyContainer from "../book/calendly/CalendlyContainer";
-import ConfirmationPage from "../book/confirmation/ConfirmationPage";
 
 const Routing = () => {
   return (
@@ -18,7 +17,6 @@ const Routing = () => {
       <Route path="/" element={<HomePage />} />
       <Route path="/book" element={<Book />} />
       <Route path="/book/calendly" element={<CalendlyContainer />} />
-      <Route path="/book/confirmation" element={<ConfirmationPage />} />
       <Route path="/products" element={<ProductPage />} />
       <Route path="/product/:id" element={<SingleProduct />} />
       <Route path="/signup" element={<SignUp />} />

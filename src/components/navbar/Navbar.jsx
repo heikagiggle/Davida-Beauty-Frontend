@@ -1,11 +1,18 @@
 import "./Navbar.css";
-import db from "../../assets/db.png";
+import logo from "../../assets/logo.png";
 import LinkWithIcon from "./LinkWithIcon";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
 import UserContext from "../../contexts/UserContext";
 import CartContext from "../../contexts/CartContext";
 import { AiOutlineAlignRight, AiOutlineClose } from "react-icons/ai";
+import circle from '../../assets/circle.png'
+import booking from '../../assets/booking.png'
+import box from '../../assets/box.png'
+import login from '../../assets/login.png'
+import signup from '../../assets/user.png'
+import orders from '../../assets/test.png'
+import logout from '../../assets/power.png'
 
 const Navbar = () => {
   const [search, setSearch] = useState("");
@@ -30,7 +37,7 @@ const Navbar = () => {
     <nav className="align_center navbar">
       <div className="align_center ">
         <div className="logo">
-          <img src={db} alt="logo" />
+          <img src={logo} alt="logo" />
         </div>
 
         <form className="navbar_form" onSubmit={handleSubmit}>
@@ -48,22 +55,22 @@ const Navbar = () => {
       </div>
 
       <div className=" align_center navbar_links">
-        <LinkWithIcon title="Home" link="/" />
-        <LinkWithIcon title="Book Now" link="/book" />
-        <LinkWithIcon title="Products" link="/products" />
+        <LinkWithIcon title="Home" link="/" emoji={circle} />
+        <LinkWithIcon title="Book Now" link="/book" emoji={booking} />
+        <LinkWithIcon title="Products" link="/products" emoji={box} />
         {/* if user is not available loggedin, then display */}
         {!user && (
           <>
             {" "}
-            <LinkWithIcon title="Login" link="/login" />
-            <LinkWithIcon title="SignUp" link="/signup" />
+            <LinkWithIcon title="Login" link="/login" emoji={login} />
+            <LinkWithIcon title="SignUp" link="/signup" emoji={signup} />
           </>
         )}
         {/* if user is available show this links  */}
         {user && (
           <>
-            <LinkWithIcon title="My Orders" link="myorders" />
-            <LinkWithIcon title="Logout" link="/logout" />
+            <LinkWithIcon title="My Orders" link="myorders" emoji={orders} />
+            <LinkWithIcon title="Logout" link="/logout" emoji={logout} />
             <NavLink to="/cart" className="align_center">
               Cart <p className="align_center cart_counts">{cart.length}</p>
             </NavLink>
