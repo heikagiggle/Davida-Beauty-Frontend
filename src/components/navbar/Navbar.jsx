@@ -56,7 +56,7 @@ const Navbar = () => {
 
       <div className=" align_center navbar_links">
         <LinkWithIcon title="Home" link="/" emoji={circle} />
-        <LinkWithIcon title="Book Now" link="/book" emoji={booking} />
+        <LinkWithIcon title="Book" link="/book" emoji={booking} />
         <LinkWithIcon title="Products" link="/products" emoji={box} />
         {/* if user is not available loggedin, then display */}
         {!user && (
@@ -69,7 +69,7 @@ const Navbar = () => {
         {/* if user is available show this links  */}
         {user && (
           <>
-            <LinkWithIcon title="My Orders" link="myorders" emoji={orders} />
+            <LinkWithIcon title="Orders" link="myorders" emoji={orders} />
             <LinkWithIcon title="Logout" link="/logout" emoji={logout} />
             <NavLink to="/cart" className="align_center">
               Cart <p className="align_center cart_counts">{cart.length}</p>
