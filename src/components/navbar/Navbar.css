@@ -5,8 +5,8 @@
 }
 
 .logo img {
-  width: 65px;
-  height: 65px;
+  width: 60px;
+  height: 60px;
 }
 .navbar form {
   display: flex;
@@ -53,7 +53,7 @@
   width: 20px;
   height: 20px;
   border-radius: 100%;
-  background-color:  rgb(86, 166, 216) ;
+  background-color: rgb(86, 166, 216);
   color: #fff;
   font-size: 15px;
   margin-left: 5px;
@@ -74,7 +74,6 @@
   background: white;
   flex-direction: column;
   font-weight: 500;
-
   padding: 7rem;
   border-radius: 10px;
   width: 100%;
@@ -110,21 +109,20 @@
     margin: 10px;
   }
   .logo img {
-    width: 65px;
-    height: 65px;
+    width: 60px;
+    height: 60px;
   }
   .navbar form {
     display: flex;
     align-items: center;
     margin: 0 20px;
   }
-  
 }
 
 @media screen and (max-width: 1023px) {
   .logo img {
-    width: 65px;
-    height: 65px;
+    width: 60px;
+    height: 60px;
   }
   .navbar form {
     display: flex;
@@ -153,5 +151,12 @@
   }
   .app__navbar-smallscreen {
     display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo img {
+    width: 48px;
+    height: 48px;
   }
 }

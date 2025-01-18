@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Footer.css";
-import { FaInstagram, FaTiktok, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaTiktok, FaFacebook, FaWhatsapp } from "react-icons/fa";
 // import { BsFillTelephoneFill,  FaHome } from "react-icons/bs";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../../utils/firebase";
@@ -101,6 +101,13 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             <FaTiktok className="icon" />
+          </a>
+          <a
+            href="https://wa.me/message/DPGCL43UFNF4N1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaWhatsapp className="icon" />
           </a>
         </div>
       </div>
