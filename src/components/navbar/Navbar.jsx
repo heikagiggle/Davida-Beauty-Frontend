@@ -96,7 +96,7 @@ const Navbar = () => {
               onLinkClick={handleLinkClick}
             />
             <LinkWithIcon
-              title="Book Now ➣"
+              title="Book ➣"
               link="/book"
               onLinkClick={handleLinkClick}
             />
@@ -125,7 +125,7 @@ const Navbar = () => {
             {user && (
               <>
                 <LinkWithIcon
-                  title="My Orders ➣"
+                  title="Orders ➣"
                   link="myorders"
                   onLinkClick={handleLinkClick}
                 />
