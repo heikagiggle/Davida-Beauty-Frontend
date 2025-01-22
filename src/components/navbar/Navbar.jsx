@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import logo from "../../assets/logo.png";
+import db from "../../assets/db.png";
 import LinkWithIcon from "./LinkWithIcon";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
@@ -37,7 +37,7 @@ const Navbar = () => {
     <nav className="align_center navbar">
       <div className="align_center ">
         <div className="logo">
-          <img src={logo} alt="logo" />
+          <img src={db} alt="logo" />
         </div>
 
         <form className="navbar_form" onSubmit={handleSubmit}>
