@@ -34,6 +34,14 @@
   text-align: left;
   font-weight: 500;
 }
+.select-text {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: 500;
+  color: #0056b3;
+  font-style: italic;
+}
 .category-header {
   display: flex;
   align-items: center;
