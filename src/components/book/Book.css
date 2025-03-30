@@ -26,7 +26,7 @@
   text-transform: capitalize;
 }
 .book-header p {
-  text-wrap: wrap; 
+  text-wrap: wrap;
 }
 .text {
   font-size: 20px;
@@ -38,8 +38,8 @@
   font-size: 20px;
   line-height: 1.5;
   text-align: left;
-  font-weight: 500;
-  color: #0056b3;
+  font-weight: 600;
+  color: #db3a88;
   font-style: italic;
 }
 .category-header {
@@ -56,7 +56,7 @@
 
 .category-description {
   font-size: 1rem;
-  color: #666;
+  color: #000000;
   margin: 0;
   padding-left: 10px;
 }
@@ -69,13 +69,13 @@
   margin: 0 1rem;
 }
 .links-desc {
-  color: #666;
+  color: #000000;
   font-weight: 400;
 }
 .links-text {
   font-size: 16px;
   cursor: pointer;
-  color: #13296b;
+  color: #db3a88;
 }
 .prices {
   font-weight: bold;

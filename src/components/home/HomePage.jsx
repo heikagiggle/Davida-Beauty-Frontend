@@ -10,7 +10,7 @@ const HomePage = () => {
     <div>
       <HeroSection
         title="Welcome to Davida Beauty"
-        subtitle="Feel free to explore our shop, we love you and we are happy to have you."
+        subtitle="Feel free to explore our shop, we love you and are happy to have you."
         link="/book"
         image={hero}
         button="Book Appointment"

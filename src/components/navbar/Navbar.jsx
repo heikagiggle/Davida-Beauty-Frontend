@@ -6,13 +6,13 @@ import { useContext, useState } from "react";
 import UserContext from "../../contexts/UserContext";
 import CartContext from "../../contexts/CartContext";
 import { AiOutlineAlignRight, AiOutlineClose } from "react-icons/ai";
-import circle from '../../assets/circle.png'
-import booking from '../../assets/booking.png'
-import box from '../../assets/box.png'
-import login from '../../assets/login.png'
-import signup from '../../assets/user.png'
+import circle from '../../assets/home.png'
+import booking from '../../assets/id.png'
+import product from '../../assets/box.png'
+import login from '../../assets/Login.png'
+import signup from '../../assets/register.png'
 import orders from '../../assets/test.png'
-import logout from '../../assets/power.png'
+import logout from '../../assets/logout.png'
 
 const Navbar = () => {
   const [search, setSearch] = useState("");
@@ -57,7 +57,7 @@ const Navbar = () => {
       <div className=" align_center navbar_links">
         <LinkWithIcon title="Home" link="/" emoji={circle} />
         <LinkWithIcon title="Book" link="/book" emoji={booking} />
-        <LinkWithIcon title="Products" link="/products" emoji={box} />
+        <LinkWithIcon title="Products" link="/products" emoji={product} />
         {/* if user is not available loggedin, then display */}
         {!user && (
           <>
