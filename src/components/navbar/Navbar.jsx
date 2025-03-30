@@ -9,7 +9,7 @@ import { AiOutlineAlignRight, AiOutlineClose } from "react-icons/ai";
 import circle from '../../assets/home.png'
 import booking from '../../assets/id.png'
 import product from '../../assets/box.png'
-import login from '../../assets/Login.png'
+import login from '../../assets/login.png'
 import signup from '../../assets/register.png'
 import orders from '../../assets/test.png'
 import logout from '../../assets/logout.png'
