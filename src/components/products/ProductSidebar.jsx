@@ -2,7 +2,7 @@ import "./ProductSidebar.css";
 import LinkWithIcon from "../navbar/LinkWithIcon";
 import useData from "../../hooks/useData";
 // import config from '../../config.json'
-import product from '../../assets/box.png'
+import product from '../../assets/star.png'
 
 const ProductSidebar = () => {
   const { data: categories, error } = useData("/category");

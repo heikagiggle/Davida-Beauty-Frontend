@@ -6,13 +6,13 @@ import { useContext, useState } from "react";
 import UserContext from "../../contexts/UserContext";
 import CartContext from "../../contexts/CartContext";
 import { AiOutlineAlignRight, AiOutlineClose } from "react-icons/ai";
-import circle from '../../assets/home.png'
-import booking from '../../assets/id.png'
-import product from '../../assets/box.png'
-import login from '../../assets/login.png'
-import signup from '../../assets/register.png'
-import orders from '../../assets/test.png'
-import logout from '../../assets/logout.png'
+import circle from "../../assets/home.png";
+import booking from "../../assets/id.png";
+import product from "../../assets/box.png";
+import login from "../../assets/login.png";
+import signup from "../../assets/register.png";
+import orders from "../../assets/test.png";
+import logout from "../../assets/logout.png";
 
 const Navbar = () => {
   const [search, setSearch] = useState("");
@@ -37,7 +37,9 @@ const Navbar = () => {
     <nav className="align_center navbar">
       <div className="align_center ">
         <div className="logo">
-          <img src={db} alt="logo" />
+          <NavLink to="/" className='cursor-pointer'>
+            <img src={db} alt="logo" />
+          </NavLink>
         </div>
 
         <form className="navbar_form" onSubmit={handleSubmit}>

@@ -2,7 +2,7 @@ export const hairstylesList = [
   {
     category: "Braids",
     description:
-      "(Knotless braids/Twists/Box braids). Be it plain braids/twist, with curls at the end or on the body, goddess or boho braids/twist any style as long as there's no weaving.",
+      "(Knotless braids, Regular braids or Twists). Be it straight plain, with curls at the end or on the body, goddess or boho, any braids or twists style as long as there's no weaving.",
     items: [
       {
         name: "Bob to shoulder length (small)",
@@ -158,7 +158,7 @@ export const hairstylesList = [
         displayPricePrefix: "",
       },
       {
-        name: "14+ stitched cornrows",
+        name: "14 and above stitched cornrows",
         price: 18000,
         link: "/book/calendly",
         desc: "",
