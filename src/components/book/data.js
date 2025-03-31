@@ -120,48 +120,48 @@ export const hairstylesList = [
   },
   {
     category: "Stitched Cornrow Braids",
-    description: "",
+    description: "Be it a plain stitch straight braids, the ends rolled up, curled, etc",
     items: [
       {
         name: "2-4 stitched cornrows",
         price: 7000,
         link: "/book/calendly",
-        desc: "Be it a plain stitch straight braids, the ends rolled up, curled, etc. ",
+        desc: "",
         displayPricePrefix: "",
       },
       {
         name: "6 stitched cornrows",
         price: 10000,
         link: "/book/calendly",
-        desc: "Be it a plain stitch straight braids, the ends rolled up, curled, etc. ",
+        desc: "",
         displayPricePrefix: "",
       },
       {
         name: "8 stitched cornrows",
         price: 12000,
         link: "/book/calendly",
-        desc: "Be it a plain stitch straight braids, the ends rolled up, curled, etc. ",
+        desc: "",
         displayPricePrefix: "",
       },
       {
         name: "10 stitched cornrows",
         price: 14000,
         link: "/book/calendly",
-        desc: "Be it a plain stitch straight braids, the ends rolled up, curled, etc. ",
+        desc: "",
         displayPricePrefix: "",
       },
       {
         name: "12 stitched cornrows",
         price: 16000,
         link: "/book/calendly",
-        desc: "Be it a plain stitch straight braids, the ends rolled up, curled, etc. ",
+        desc: "",
         displayPricePrefix: "",
       },
       {
         name: "14+ stitched cornrows",
         price: 18000,
         link: "/book/calendly",
-        desc: "Be it a plain stitch straight braids, the ends rolled up, curled, etc. ",
+        desc: "",
         displayPricePrefix: "",
       },
     ],
@@ -208,7 +208,7 @@ export const hairstylesList = [
     ],
   },
   {
-    category: "Hair installation and styling.",
+    category: "Hair installation and styling",
     description: "",
     items: [
       {
