@@ -31,7 +31,7 @@ const Book = () => {
           <h1>BOOK AN APPOINTMENT</h1>
           <p className="select-text">Select hairstyle to proceed.</p>
           <p className="text">
-          Prices include all materials needed for the service EXCEPT hair extensions (e.g., braiding hair, attachment, kinky, passion twist, boho curls, locs, etc.), which will be charged separately.
+          Prices include all materials needed for the service EXCEPT hair extensions (e.g, braiding hair, attachment, kinky, passion twist, boho curls, locs, etc.), which will be charged separately.
           </p>
         </div>
 
